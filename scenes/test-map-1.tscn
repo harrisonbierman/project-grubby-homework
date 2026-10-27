@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://2xwhrtpcv8gk"]
+
+[ext_resource type="PackedScene" uid="uid://dlt5lcy6suspe" path="res://scenes/site.tscn" id="1_j1fec"]
+[ext_resource type="Texture2D" uid="uid://dccpr0ju83r5b" path="res://assets/maps/test-map-1.png" id="1_ppcpg"]
+
+[node name="test-map-1" type="Node2D" unique_id=1377651521]
+
+[node name="map-sprite" type="Sprite2D" parent="." unique_id=2006933200]
+texture = ExtResource("1_ppcpg")
+
+[node name="sites" type="Node2D" parent="." unique_id=144365]
+
+[node name="Site" parent="sites" unique_id=680963438 node_paths=PackedStringArray("adjacent_sites") instance=ExtResource("1_j1fec")]
+z_index = 1
+position = Vector2(580, 384)
+site_id = 1
+adjacent_sites = [NodePath("../Site3"), NodePath("../Site2"), NodePath("../Site6"), NodePath("../Site7")]
+
+[node name="Site2" parent="sites" unique_id=939672380 instance=ExtResource("1_j1fec")]
+position = Vector2(-684, -384)
+site_id = 2
+
+[node name="Site3" parent="sites" unique_id=1168076974 instance=ExtResource("1_j1fec")]
+position = Vector2(814, -612)
+site_id = 3
+
+[node name="Site4" parent="sites" unique_id=1891353751 instance=ExtResource("1_j1fec")]
+position = Vector2(638, -1465)
+site_id = 4
+
+[node name="Site5" parent="sites" unique_id=1711598420 instance=ExtResource("1_j1fec")]
+position = Vector2(-977, -1433)
+site_id = 5
+
+[node name="Site6" parent="sites" unique_id=70978916 instance=ExtResource("1_j1fec")]
+position = Vector2(573, 1413)
+site_id = 6
+
+[node name="Site7" parent="sites" unique_id=1437493086 instance=ExtResource("1_j1fec")]
+position = Vector2(-778, 1211)
+site_id = 7

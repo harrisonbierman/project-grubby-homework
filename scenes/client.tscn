@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://dmee4w0rgnv2g"]
+
+[ext_resource type="Script" uid="uid://c22foxn328coq" path="res://src/client/client_main.gd" id="1_4tr0r"]
+[ext_resource type="Script" uid="uid://ulefi6lbu5so" path="res://scenes/camera_2d.gd" id="2_r26j7"]
+[ext_resource type="Script" uid="uid://b2t304f5j7jw2" path="res://scenes/button.gd" id="3_r26j7"]
+[ext_resource type="PackedScene" uid="uid://2xwhrtpcv8gk" path="res://scenes/test-map-1.tscn" id="3_t0ykn"]
+
+[node name="client" type="Node2D" unique_id=1559444594]
+script = ExtResource("1_4tr0r")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=766963544]
+script = ExtResource("2_r26j7")
+
+[node name="UI" type="Control" parent="Camera2D" unique_id=1056544013]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="Camera2D/UI" unique_id=749268907]
+z_index = 4
+layout_mode = 0
+offset_right = 118.0
+offset_bottom = 31.0
+text = "Send Message"
+script = ExtResource("3_r26j7")
+
+[node name="test-map-1" parent="." unique_id=1377651521 instance=ExtResource("3_t0ykn")]
+position = Vector2(-16, -7)

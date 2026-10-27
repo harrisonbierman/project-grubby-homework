@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://dmtbcpg0l624w"]
+
+[ext_resource type="Texture2D" uid="uid://dobvnasjrpqi2" path="res://assets/sites/attack-vector.png" id="1_jq1ie"]
+
+[node name="AttackVector" type="Node2D" unique_id=932505291]
+scale = Vector2(18, 18)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1656985075]
+texture = ExtResource("1_jq1ie")
+hframes = 2

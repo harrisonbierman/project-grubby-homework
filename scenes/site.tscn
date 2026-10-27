@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dlt5lcy6suspe"]
+
+[ext_resource type="Script" uid="uid://doalkcwo2nx33" path="res://scenes/site.gd" id="1_khdqb"]
+[ext_resource type="Texture2D" uid="uid://rf2s74pj48sw" path="res://assets/sites/Sites.png" id="1_t7a5y"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_487v6"]
+radius = 16.011665
+
+[node name="Site" type="Area2D" unique_id=424629160]
+scale = Vector2(18, 18)
+script = ExtResource("1_khdqb")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1338449264]
+texture = ExtResource("1_t7a5y")
+hframes = 3
+frame = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=215153476]
+shape = SubResource("CircleShape2D_487v6")
+
+[node name="PieceAnchor" type="Marker2D" parent="." unique_id=1420978138]
+
+[node name="Highlight" type="Sprite2D" parent="." unique_id=1180937968]

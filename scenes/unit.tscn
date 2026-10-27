@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://c7mpixj6kiokw"]
+
+[ext_resource type="Texture2D" uid="uid://blj7r46sq4uhg" path="res://assets/sites/test-units.png" id="1_o7ajc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_487v6"]
+
+[node name="Unit" type="Area2D" unique_id=1574140832]
+scale = Vector2(19, 19)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=143708101]
+texture = ExtResource("1_o7ajc")
+hframes = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1618831997]
+position = Vector2(-0.10526316, -1.3684211)
+shape = SubResource("CircleShape2D_487v6")

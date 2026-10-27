@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://blkomwqbi40aw"]
+
+[ext_resource type="Script" uid="uid://fgbt54uwmamw" path="res://scenes/launcher.gd" id="1_ut831"]
+
+[node name="Launcher" type="Node" unique_id=1535775151]
+script = ExtResource("1_ut831")
