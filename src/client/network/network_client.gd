@@ -7,6 +7,7 @@ var SERVER_IP := "127.0.0.1"
 var peer := ENetMultiplayerPeer.new()
 
 signal message_received(message: Dictionary)
+signal server_disconnected()
 
 # Called when the node enters the scene tree for the first time.
 func start() -> void:
@@ -15,11 +16,13 @@ func start() -> void:
 	if error != OK:
 		push_error("Failed to create client")
 	
+	peer.peer_disconnected.connect(_on_peer_disconnected)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func poll() -> void:
-	peer.poll()
+	if peer.get_connection_status() != MultiplayerPeer.CONNECTION_DISCONNECTED:
+		peer.poll()
 	
 	while peer.get_available_packet_count() > 0:
 		var packet: PackedByteArray = peer.get_packet()
@@ -39,7 +42,11 @@ func send_message(message: Dictionary) -> void:
 	else:
 		var packet: PackedByteArray = JSON.stringify(message).to_utf8_buffer()
 		peer.put_packet(packet)
-			
+		
+# dont pass up server_id since client is only connected server not peer to peer
+func _on_peer_disconnected(_server_id: int) -> void:
+	push_error("Client: Lost connection to server")
+	server_disconnected.emit()
 			
 		
 		
