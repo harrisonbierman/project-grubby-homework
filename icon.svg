@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <title>Grubby Homework</title>
+  <desc>Minimal playful icon of a tilted homework sheet, loose doodle, and pencil.</desc>
+  <!-- homework sheet -->
+  <g transform="rotate(-9 123 128)">
+    <path d="M62 37 H157 L191 72 V211 Q191 218 184 218 H62 Q54 218 54 210 V45 Q54 37 62 37Z"
+          fill="#FFF4DF" stroke="#29324A" stroke-width="9" stroke-linejoin="round"/>
+    <path d="M157 37 V65 Q157 72 164 72 H191" fill="#FFD6A2"
+          stroke="#29324A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- sparse notebook lines -->
+    <path d="M78 97 H166 M78 127 H166 M78 157 H136" stroke="#8DC8D1" stroke-width="7" stroke-linecap="round"/>
+    <!-- playful handwritten correction -->
+    <path d="M84 184 Q96 170 106 184 T130 184" fill="none" stroke="#EF816E" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <!-- crooked pencil: deliberately simple -->
+  <g transform="rotate(33 179 140)">
+    <path d="M163 53 Q163 47 169 47 H190 Q196 47 196 53 V173 L179 203 L163 173 Z"
+          fill="#F8B94F" stroke="#29324A" stroke-width="9" stroke-linejoin="round"/>
+    <path d="M163 72 H196" stroke="#29324A" stroke-width="8"/>
+    <path d="M169 47 H190 Q196 47 196 53 V72 H163 V53 Q163 47 169 47Z" fill="#F07874" stroke="#29324A" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M163 173 H196 L179 203 Z" fill="#FFE0AD" stroke="#29324A" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M173 193 L179 203 L185 193" fill="#29324A" stroke="#29324A" stroke-width="4" stroke-linejoin="round"/>
+  </g>
+  <!-- one stray scribble conveys 'grubby' without literal dirt -->
+  <path d="M42 206 l11 -8 -3 13 12 -8" fill="none" stroke="#6F8C88" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
