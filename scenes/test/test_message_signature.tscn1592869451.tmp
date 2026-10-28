@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://btphpf8aa063k"]
+
+[ext_resource type="Script" uid="uid://b26gyjxe6vl3v" path="res://scenes/test/test_message_signature.gd" id="1_e086l"]
+
+[node name="TestMessageSignature" type="Node" unique_id=2096000271]
+script = ExtResource("1_e086l")
